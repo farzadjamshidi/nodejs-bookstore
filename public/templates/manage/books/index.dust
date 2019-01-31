@@ -1,0 +1,40 @@
+{>"layouts/manage" /}
+
+{<body}
+
+    <h1>Books</h1>
+    <p><a class="button success" href="/manage/books/add">Add book</a></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="200">ID</th>
+                <th width="200">Title</th>
+                <th width="200">Author</th>
+                <th width="200">Edit</th>
+                <th width="200">Delete</th>
+            <tr>
+        </thead>
+        <tbody>
+            {#books}
+            <tr>
+                <td>{._id}</td>
+                <td>{.title}</td>
+                <td>{.author}</td>
+                <td><a class="success button" href="/manage/books/edit/{._id}">Edit</a></td>
+                <td>
+                    <form method="POST" action="/manage/books/delete/{._id}">
+
+                        <input type="submit" value="Delete" class="alert button">
+                        <input type="hidden" name="_csrf" value="{_csrf}">
+                        <input type="hidden" name="_method" value="DELETE">
+                    
+                    </form>
+                </td>
+            </tr>
+            {/books}
+        </tbody>
+    </table>
+
+
+{/body}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> admin {+title /}</title>
+
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <style>
+        .column{
+            float: left !important;
+        }
+        .large-3 {
+            width: 25%;
+        }
+        .large-9 {
+            width: 75%;
+        }
+        li
+        {
+            padding: 7px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h1> admin Bookstore</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu" >
+                    <li><a href="/manage">Dashboard</a></li>
+                    <li><a href="/manage/books">Books</a></li>
+                    <li><a href="/manage/categories">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="wrapper">
+    {+body /}
+</div>
+
+<footer>
+    <div class="row">
+        <div class="large-12 colums">
+            <p>all right reserved | <a href="/">
+                Front Page
+            </a></p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{>"layouts/manage" /}
+
+{<body}
+
+    <form method="post" action="/manage/categories/edit/{category._id}">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-12 cell">
+                    <label>Name
+                        <input type="text" name="name" value="{category.name}">
+                    </label>
+                </div>
+                
+                <div class="medium-12 cell">
+                        
+                            <input type="submit" name="submit" value="submit">
+                      
+                </div>
+
+                <input type="hidden" name="_csrf" value="{_csrf}">
+
+                
+            </div>
+
+        </div>
+
+    </form>
+
+
+
+{/body}

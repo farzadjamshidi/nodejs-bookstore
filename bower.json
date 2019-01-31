@@ -1,0 +1,18 @@
+{
+  "name": "farzad",
+  "description": " ",
+  "main": "index.js",
+  "author": "Farzad",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}
